@@ -1,38 +1,44 @@
-.App {
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+h1 {
+  color: #89d7ff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+span {
+  text-shadow: 1px 1px 1px #376e92;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.lottie {
+  width: 300px;
+}
+
+@media (min-width: 420px) {
+  .lottie {
+    width: 400px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 620px) {
+  h1 {
+    font-size: 32px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .lottie {
+    width: 600px;
+  }
+}
+
+@media (min-width: 820px) {
+  .lottie {
+    width: 800px;
   }
 }
